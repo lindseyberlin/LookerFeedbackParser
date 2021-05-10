@@ -53,11 +53,11 @@ if file is not None:
         if ind % 2 == 0:
             text_col1.write(f"### {col}")
             text_col1.write(f"Average value: {subset[col].mean():.4f}")
-            text_col1.write(f"Range: {subset[col].min():.4f} - {subset[col].max():.4f}")
+            text_col1.write(f"Range: {subset[col].min()} - {subset[col].max()}")
         else: 
             text_col2.write(f"### {col}")
             text_col2.write(f"Average value: {subset[col].mean():.4f}")
-            text_col2.write(f"Range: {subset[col].min():.4f} - {subset[col].max():.4f}")
+            text_col2.write(f"Range: {subset[col].min()} - {subset[col].max()}")
 
     st.write("## Random Sample of Written Feedback:")
 
